@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>D'EERA COFFEE </title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#e1c1a4",
+                    "surface-container-low": "#fff1e8",
+                    "primary-fixed-dim": "#e1c1a4",
+                    "background": "#fff8f5",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#765f3d",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#4e453d",
+                    "secondary-fixed": "#feddb3",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#a4a58f",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#1b1d0e",
+                    "tertiary-fixed": "#e4e4cc",
+                    "surface-container": "#ffeadc",
+                    "surface-variant": "#f8deca",
+                    "inverse-on-surface": "#ffeee2",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#efd5c2",
+                    "surface": "#fff8f5",
+                    "on-primary-fixed-variant": "#59422c",
+                    "surface-tint": "#725a42",
+                    "secondary": "#725a39",
+                    "surface-bright": "#fff8f5",
+                    "inverse-surface": "#3d2d20",
+                    "on-primary-container": "#bd9f83",
+                    "primary-fixed": "#fedcbe",
+                    "secondary-fixed-dim": "#e1c299",
+                    "primary-container": "#4b3621",
+                    "secondary-container": "#fbdbb0",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#584324",
+                    "tertiary": "#242516",
+                    "on-background": "#26190d",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#c8c8b0",
+                    "on-tertiary-fixed-variant": "#474836",
+                    "surface-container-highest": "#f8deca",
+                    "on-surface": "#26190d",
+                    "on-primary-fixed": "#291806",
+                    "primary": "#33210d",
+                    "surface-container-high": "#fee3d0",
+                    "on-secondary-fixed": "#281801",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#d2c4ba",
+                    "outline": "#80756c",
+                    "tertiary-container": "#3a3b2a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "24px",
+                    "stack-sm": "12px",
+                    "container-max-width": "480px",
+                    "stack-lg": "48px",
+                    "gutter": "16px",
+                    "base": "8px",
+                    "stack-md": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["EB Garamond"],
+                    "label-md": ["Hanken Grotesk"],
+                    "headline-lg": ["EB Garamond"],
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "headline-sm": ["EB Garamond"],
+                    "label-sm": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        background-color: #fff8f5;
+        color: #26190d;
+      }
+      .link-card {
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .link-card:active {
+        transform: scale(0.98);
+        box-shadow: none !important;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- Top App Bar (Shared Component) -->
+<header class="w-full sticky top-0 bg-background z-50 transition-opacity duration-200">
+<div class="flex justify-between items-center px-margin-mobile h-16 max-w-[480px] mx-auto">
+<span class="material-symbols-outlined text-primary hover:opacity-80 transition-opacity cursor-pointer">coffee</span>
+<h1 class="font-headline-md text-headline-md text-primary">D'EERA COFFEE</h1>
+<span class="material-symbols-outlined text-primary hover:opacity-80 transition-opacity cursor-pointer">coffee</span>
+</div>
+</header>
+<main class="max-w-[480px] mx-auto px-margin-mobile py-stack-lg flex flex-col items-center text-center">
+<!-- Profile Section -->
+<section class="mb-stack-md flex flex-col items-center">
+<div class="relative w-32 h-32 rounded-full p-1 border-2 border-primary/20 mb-stack-sm">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A professional close-up logo of a premium coffee shop brand called Deera Kopi. The logo features a minimalist coffee bean illustration with elegant serif typography. The background is a soft silk cream texture, and the primary color is a rich, deep espresso brown. The lighting is soft and natural, reflecting a warm, welcoming morning atmosphere in a modern cafe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3NgqU-pneWQyC0fsrEqv-jLrWC_QOXT51teo6hyRs1k_g3gupJjpU2g9vqJ1qq9815spXZ-ISkLERKVgj5eb3iboPf_aWnK-slaKDUtFTipOf5rj-t-7k_yZv7zTkJzFJ_Oms2C3fK-IpxGpMcS7VZJEPcA-6eboVrAIuIOoqNOcd6LhvvR0MHQht9TsNjlsTVlIMtWKsPiOlPaXXYKhGrvN0_f1HwBgGE0VJjX__jTQRWKXwU4wwRw"/>
+</div>
+<div class="absolute bottom-1 right-1 bg-primary text-white p-1 rounded-full border-2 border-background">
+<span class="material-symbols-outlined text-sm" style="font-size: 16px;">verified</span>
+</div>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">COFFEE & MATCHA</h2>
+<p class="font-body-lg text-on-surface-variant max-w-[320px]">
+                Nikmati racikan kopi susu terbaik kami
+            </p>
+</section>
+<!-- Bento Highlights / Quick Info -->
+<div class="grid grid-cols-2 gap-4 w-full mb-stack-md">
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col items-center justify-center shadow-[0_4px_12px_0_rgba(51,33,13,0.04)]">
+<span class="material-symbols-outlined text-secondary mb-1">schedule</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Jam Buka</span>
+<span class="text-body-md font-medium text-primary">07:00 - 22:00</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col items-center justify-center shadow-[0_4px_12px_0_rgba(51,33,13,0.04)]">
+<span class="material-symbols-outlined text-secondary mb-1">star</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Rating</span>
+<span class="text-body-md font-medium text-primary">4.9 (300+)</span>
+</div>
+</div>
+<!-- Call to Action Buttons -->
+<section class="w-full space-y-4">
+<a class="link-card block w-full bg-primary text-on-primary py-4 px-6 rounded-full font-label-md text-label-md flex items-center justify-between shadow-lg shadow-primary/10" href="https://spf.shopee.co.id/9UzuZGKn3B">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">restaurant</span>
+<span>Order via ShopeeFood</span>
+</div>
+<span class="material-symbols-outlined">chevron_right</span>
+</a>
+<a class="link-card block w-full bg-surface-container text-primary py-4 px-6 rounded-full font-label-md text-label-md flex items-center justify-between border border-primary/10 shadow-[0_4px_12px_0_rgba(51,33,13,0.04)]" href="https://gofood.co.id/yogyakarta/restaurant/d-eera-coffee-jetis-6eba8d6d-6c60-4fff-8453-c936d6d55425">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">delivery_dining</span>
+<span>Order via GoFood</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</a>
+<a class="link-card block w-full bg-surface-container text-primary py-4 px-6 rounded-full font-label-md text-label-md flex items-center justify-between border border-primary/10 shadow-[0_4px_12px_0_rgba(51,33,13,0.04)]" href="https://food.grab.com/id/id/restaurant/d-eera-coffee-kopi-sumber-agung-delivery/6-C76FBB4KHE6TVN">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">local_shipping</span>
+<span>Order via GrabFood</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</a>
+<!-- Featured Product Card -->
+<div class="mt-stack-lg w-full rounded-2xl overflow-hidden bg-white shadow-sm border border-outline-variant/30">
+<div class="h-48 relative">
+<img class="w-full h-full object-cover" data-alt="A high-quality, aesthetic photograph of a signature latte in a clear glass on a rustic wooden table. The coffee features perfect microfoam art. The background is a blurred, warm-toned coffee shop interior with soft sunlight streaming through the window, creating a serene and premium atmosphere consistent with the Deera Kopi brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtcmCV64NubZKu797EPVnGCQqdVANGuQ0Tv_If9UAx93JRL8aNLH9-r1gH_EI6MO2i5YdAh7JGu0WH5S6Z2_s4kMTouMDZO_NBExqKpte3Fp6HrkldzLk_FGE9opCM6ILMGYReALHt7E0v2ORJ8mUAykVd4UJBmTjKIaNqkBmK9ub16AGl-RVNVXzuhj9D2etbe74PL5-PS4clWah7kYN_gmagc-MZlgWQyUatxF_LddgM0L4xMhczZw"/>
+<div class="absolute top-4 right-4">
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">KOPI NIKMAT</span>
+</div>
+</div>
+<div class="p-5 text-left">
+<h3 class="font-headline-sm text-primary mb-1">Palm Sugar & Matcha Latte</h3>
+<p class="text-body-md text-on-surface-variant mb-4">Harga di setiap aplikator mungkin berbeda, anda dapat cek di setiap aplikasi untuk dapat harga lebih murah. Harga offline tentu lebih murah 😄😄😄</p>
+<a href="https://wa.me/082225321327?text=Halo%20kak%20,%20saya%20saya%20mau%20pesan%20kopi" target="blank"><button class="w-full py-2 bg-secondary-container text-on-secondary-container rounded-lg font-label-md text-label-md active:scale-95 transition-transform">
+                        Pesan Sekarang
+                    </button></a>
+</div>
+</div>
+</section>
+<!-- Social Footer -->
+<footer class="mt-stack-lg w-full flex flex-col items-center space-y-6 pb-24">
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-[0.2em]">© 2026 D'EERA COFFEE</p>
+</footer>
+</main>
+<!-- Bottom Navigation (Shared Component) -->
+<nav class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] bg-surface-container-low shadow-[0_-4px_12px_0_rgba(51,33,13,0.04)] z-50 flex justify-around items-center py-base px-gutter">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 transition-transform duration-200 active:translate-y-1" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-label-sm text-label-sm">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant/50 transition-transform duration-200 active:translate-y-1 px-4 py-1" href="#">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+<span class="font-label-sm text-label-sm">Location</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant/50 transition-transform duration-200 active:translate-y-1 px-4 py-1" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-label-sm text-label-sm">Contact</span>
+</a>
+</nav>
+<script>
+        // Optional micro-interactions
+        document.querySelectorAll('.link-card').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.classList.add('scale-95');
+            });
+            button.addEventListener('mouseup', () => {
+                button.classList.remove('scale-95');
+            });
+            button.addEventListener('mouseleave', () => {
+                button.classList.remove('scale-95');
+            });
+        });
+
+        // Sticky header opacity effect on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-sm', 'bg-background/95', 'backdrop-blur-md');
+            } else {
+                header.classList.remove('shadow-sm', 'bg-background/95', 'backdrop-blur-md');
+            }
+        });
+    </script>
+</body></html>
